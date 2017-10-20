@@ -37,7 +37,6 @@ window.onload = function () {
 		var start = document.getElementById("start");
 		start.onclick = function(){
 			g=0;
-			console.log('test');
 			document.getElementById("status").innerHTML = "Move your mouse over the \"S\" to begin.";
 			for ( i = 0; i < boundary.length-1;i++) {
 				boundary[i].setAttribute("class","boundary boundary");
@@ -46,12 +45,12 @@ window.onload = function () {
 			document.onmousemove = function (event) {
 				var x = event.clientX;
 				var y = event.clientY;
-				var left = maze.offsetLeft;
-				var right = maze.offsetRight;
-				var height = maze.offsetHeight;
-				var width = maze.offsetWidth;
-				var top = maze.offsetTop;
-				if ((x < left)||(x < right))
+				var l = maze.offsetLeft;
+				var r = maze.offsetRight;
+				var h = maze.offsetHeight;
+				var w = maze.offsetWidth;
+				var t = maze.offsetTop;
+				if ((x < l)||(x < r))
 				{
 					for (a = 0; a< boundary.length ; a++)
 					{
