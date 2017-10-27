@@ -23,7 +23,6 @@ window.onload = function () {
 				document.getElementById("status").innerHTML = "You Win";
 			};
 		};
-		
 		let s = document.getElementById("start");
 		s.onclick = function(){
 			tracker=0;
