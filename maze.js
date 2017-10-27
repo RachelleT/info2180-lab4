@@ -46,7 +46,6 @@ window.onload = function () {
 						boundary[b].setAttribute("class","boundary youlose");
 					}
 				};
-			};
-			
+			};	
 		};	
 	};	
